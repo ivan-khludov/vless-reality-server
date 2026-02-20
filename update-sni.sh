@@ -18,7 +18,7 @@ main() {
     dest_port="443"
   fi
 
-  read -r -p "SNI (default: ${current_sni}): " new_sni || true
+  read -r -p "SNI (current: ${current_sni}): " new_sni || true
   new_sni="${new_sni:-$current_sni}"
   new_sni="${new_sni//[[:space:]]/}"
   if [[ -z "${new_sni}" ]]; then

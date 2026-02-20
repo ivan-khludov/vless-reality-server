@@ -12,7 +12,7 @@ main() {
   local current_port input_port new_port tmp_config
   IFS="|" read -r _ current_port < <(load_reality_settings_from_config)
 
-  read -r -p "Listen port for VLESS (default: ${current_port}): " input_port || true
+  read -r -p "Listen port for VLESS (current: ${current_port}): " input_port || true
   new_port="$(parse_port "${current_port}" "${input_port}")"
 
   tmp_config="$(mktemp)"
