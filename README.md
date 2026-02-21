@@ -12,7 +12,7 @@ One-command setup for a self-hosted **VLESS + Reality** proxy server using Xray.
 
 ```bash
 git clone https://github.com/ivan-khludov/vless-reality-server.git
-cd ./vless-reality-server
+cd vless-reality-server
 sudo bash install.sh
 ```
 
